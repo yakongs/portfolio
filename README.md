@@ -99,6 +99,8 @@ The application is configured for:
 https://yakongs.github.io/portfolio/
 ```
 
+Repository: `https://github.com/yakongs/portfolio`
+
 The Vite base path is `/portfolio/`. The workflow in
 `.github/workflows/deploy.yml` builds and deploys the `dist` directory whenever
 the `main` branch is pushed.

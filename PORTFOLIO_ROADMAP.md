@@ -85,6 +85,7 @@ These are optional and do not count toward the initial completion percentage.
 | 2026-06-10 | 75% + 7 extras | Replaced the static skill list with a responsive, keyboard-accessible technology constellation and live detail panel. |
 | 2026-06-10 | 75% + 9 extras | Completed the optional backlog with draggable case-study windows and privacy-friendly local interaction analytics. |
 | 2026-06-10 | 95% + 9 extras | Added verified contact/social profiles, available project repositories, full deployment metadata, and GitHub Pages automation. |
+| 2026-06-10 | Live | Published the portfolio through GitHub Pages and verified the site and resume return HTTP 200. |
 
 ## Blocked Configuration
 
@@ -92,7 +93,7 @@ The remaining core task requires a verified live-demo URL:
 
 - Project live-demo URLs
 
-The portfolio deployment target is `https://yakongs.github.io/portfolio/`.
+The portfolio is live at `https://yakongs.github.io/portfolio/`.
 Repository links are configured for the public projects currently available on
 GitHub. No live demo was assigned without a verified deployed application.
 
