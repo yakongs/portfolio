@@ -1,9 +1,8 @@
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import "./App.css";
 import bgImage from "./assets/bg.webp";
 import profileImage from "./assets/profile.webp";
 import CaseStudyWindow from "./components/CaseStudyWindow.jsx";
-import CommandPalette from "./components/CommandPalette.jsx";
 import ProjectCard from "./components/ProjectCard.jsx";
 import SkillConstellation from "./components/SkillConstellation.jsx";
 import projects from "./data/projects.js";
@@ -16,7 +15,6 @@ function App() {
   const [activeFilter, setActiveFilter] = useState("All");
   const [activeSection, setActiveSection] = useState("");
   const [activeProject, setActiveProject] = useState(null);
-  const [isCommandOpen, setIsCommandOpen] = useState(false);
   const [theme, setTheme] = useState("lavender");
   const filters = ["All", ...new Set(projects.map((project) => project.category))];
   const filteredProjects = useMemo(
@@ -26,8 +24,6 @@ function App() {
         : projects.filter((project) => project.category === activeFilter),
     [activeFilter],
   );
-  const closeCommandPalette = useCallback(() => setIsCommandOpen(false), []);
-
   useEffect(() => {
     const sections = document.querySelectorAll("main section[id]");
     const observer = new IntersectionObserver(
@@ -49,37 +45,6 @@ function App() {
     sections.forEach((section) => observer.observe(section));
     return () => observer.disconnect();
   }, []);
-
-  useEffect(() => {
-    const handleKeyDown = (event) => {
-      if ((event.ctrlKey || event.metaKey) && event.key.toLowerCase() === "k") {
-        event.preventDefault();
-        setIsCommandOpen((isOpen) => !isOpen);
-      }
-    };
-
-    document.addEventListener("keydown", handleKeyDown);
-    return () => document.removeEventListener("keydown", handleKeyDown);
-  }, []);
-
-  const navigateTo = (hash) => {
-    document.querySelector(hash)?.scrollIntoView({ behavior: "smooth" });
-  };
-
-  const commands = [
-    { label: "About me", hint: "Profile and background", action: () => navigateTo("#about") },
-    { label: "Skills", hint: "Technology toolkit", action: () => navigateTo("#skills") },
-    { label: "Projects", hint: "Selected work", action: () => navigateTo("#projects") },
-    { label: "Contact", hint: "Resume and contact", action: () => navigateTo("#contact") },
-    {
-      label: "View resume",
-      hint: "Open PDF in a new tab",
-      action: () => {
-        trackInteraction("resume:command-palette");
-        window.open(resumeUrl, "_blank", "noopener,noreferrer");
-      },
-    },
-  ];
 
   return (
     <div
@@ -108,14 +73,6 @@ function App() {
           ))}
         </nav>
 
-        <button
-          className="command-trigger"
-          type="button"
-          aria-keyshortcuts="Control+K Meta+K"
-          onClick={() => setIsCommandOpen(true)}
-        >
-          CTRL K
-        </button>
       </header>
 
       <main id="top">
@@ -286,12 +243,6 @@ function App() {
           />
         ))}
       </aside>
-
-      <CommandPalette
-        commands={commands}
-        isOpen={isCommandOpen}
-        onClose={closeCommandPalette}
-      />
 
       <CaseStudyWindow
         project={activeProject}

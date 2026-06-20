@@ -54,7 +54,6 @@ These are optional and do not count toward the initial completion percentage.
 
 - [x] Add an animated active-section indicator to the navbar.
 - [x] Add lavender, pink chrome, and aqua themes.
-- [x] Add a `Ctrl+K` portfolio command palette.
 - [x] Present project case studies as draggable Y2K desktop windows.
 - [x] Add an interactive technology orbit or skill constellation.
 - [x] Add subtle cursor glow and depth effects.
@@ -86,6 +85,7 @@ These are optional and do not count toward the initial completion percentage.
 | 2026-06-10 | 75% + 9 extras | Completed the optional backlog with draggable case-study windows and privacy-friendly local interaction analytics. |
 | 2026-06-10 | 95% + 9 extras | Added verified contact/social profiles, available project repositories, full deployment metadata, and GitHub Pages automation. |
 | 2026-06-10 | Live | Published the portfolio through GitHub Pages and verified the site and resume return HTTP 200. |
+| 2026-06-11 | 95% + 8 extras | Removed the `Ctrl+K` command palette and its navigation trigger. |
 
 ## Blocked Configuration
 

@@ -3,9 +3,9 @@
 A single-page React portfolio with a Y2K-inspired glass interface, responsive
 project cards, expandable case studies, project filtering, and selectable color
 themes. It also includes active-section navigation and a keyboard-accessible
-command palette opened with `Ctrl+K` or `Command+K`. The skills section uses an
-interactive technology constellation with keyboard-selectable nodes. Project
-case studies open as draggable desktop-style windows.
+skills section with an interactive technology constellation and
+keyboard-selectable nodes. Project case studies open as draggable desktop-style
+windows.
 
 ## Stack
 

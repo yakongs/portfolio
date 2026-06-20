@@ -87,16 +87,6 @@ check(
   "Expected a reduced-motion media query.",
 );
 check(
-  "Dialog labelling",
-  /aria-labelledby="command-title"/.test(
-    fs.readFileSync(
-      path.join(root, "src", "components", "CommandPalette.jsx"),
-      "utf8",
-    ),
-  ),
-  "Expected the command dialog to have an accessible name.",
-);
-check(
   "Interactive skills labelling",
   /aria-label="Interactive technology constellation"/.test(skillSource) &&
     /aria-live="polite"/.test(skillSource) &&

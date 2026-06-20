@@ -132,18 +132,6 @@ nav a.is-active::after {
   width: 100%;
 }
 
-.command-trigger {
-  padding: 9px 12px;
-  border: 1px solid rgba(255, 255, 255, 0.95);
-  border-radius: 10px;
-  background: rgba(255, 255, 255, 0.46);
-  color: var(--accent-dark);
-  font: 900 10px/1 "Orbitron", sans-serif;
-  letter-spacing: 1px;
-  box-shadow: 0 8px 20px rgba(90, 65, 151, 0.14);
-  cursor: pointer;
-}
-
 .hero {
   min-height: 100vh;
   padding: 160px 60px 80px;
@@ -1122,123 +1110,6 @@ nav a.is-active::after {
   background: #62cce7;
 }
 
-.command-palette {
-  width: min(620px, calc(100% - 32px));
-  max-height: calc(100vh - 64px);
-  padding: 0;
-  overflow: visible;
-  border: 0;
-  border-radius: 32px;
-  background: transparent;
-}
-
-.command-palette::backdrop {
-  background: rgba(65, 45, 108, 0.34);
-  backdrop-filter: blur(10px);
-}
-
-.command-window {
-  overflow: hidden;
-  padding: 28px;
-  border: 2px solid rgba(255, 255, 255, 0.94);
-  border-radius: 32px;
-  background:
-    radial-gradient(
-      circle at 90% 0%,
-      var(--accent-glow),
-      transparent 34%
-    ),
-    linear-gradient(
-      145deg,
-      rgba(255, 255, 255, 0.96),
-      rgba(235, 227, 255, 0.92)
-    );
-  color: #625187;
-  box-shadow:
-    inset 0 0 30px rgba(255, 255, 255, 0.8),
-    0 30px 90px rgba(72, 47, 129, 0.34);
-}
-
-.command-heading {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 20px;
-  margin-bottom: 24px;
-}
-
-.command-heading p,
-.command-footer {
-  margin: 0;
-  font-family: "Orbitron", sans-serif;
-  font-size: 10px;
-  font-weight: 900;
-  letter-spacing: 2px;
-}
-
-.command-heading h2 {
-  margin: 8px 0 0;
-  color: var(--accent);
-  font-size: 34px;
-  font-style: italic;
-}
-
-.command-heading button {
-  padding: 9px 11px;
-  border: 1px solid white;
-  border-radius: 10px;
-  background: rgba(255, 255, 255, 0.62);
-  color: var(--accent-dark);
-  font: 900 10px/1 "Orbitron", sans-serif;
-  cursor: pointer;
-}
-
-.command-list {
-  display: grid;
-  gap: 10px;
-}
-
-.command-list button {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
-  width: 100%;
-  padding: 16px 18px;
-  border: 1px solid rgba(255, 255, 255, 0.94);
-  border-radius: 18px;
-  background: rgba(255, 255, 255, 0.52);
-  color: #66528f;
-  text-align: left;
-  cursor: pointer;
-  transition:
-    transform 0.2s ease,
-    background 0.2s ease;
-}
-
-.command-list button:hover,
-.command-list button:focus-visible {
-  transform: translateX(4px);
-  background: rgba(255, 255, 255, 0.88);
-}
-
-.command-list span {
-  font: 900 13px/1.3 "Orbitron", sans-serif;
-}
-
-.command-list small {
-  color: #776b94;
-  font-family: Arial, sans-serif;
-  font-size: 13px;
-}
-
-.command-footer {
-  margin-top: 22px;
-  color: #8576a4;
-  text-align: center;
-  letter-spacing: 1px;
-}
-
 .case-window-dialog {
   width: min(920px, calc(100% - 36px));
   max-height: calc(100vh - 36px);
@@ -1411,18 +1282,6 @@ button:focus-visible,
     font-size: 11px;
   }
 
-  .command-trigger {
-    position: absolute;
-    top: 24px;
-    right: 20px;
-    font-size: 0;
-  }
-
-  .command-trigger::after {
-    content: "⌘K";
-    font-size: 10px;
-  }
-
   .hero {
     grid-template-columns: 1fr;
     padding: 160px 24px 80px;
@@ -1517,20 +1376,6 @@ button:focus-visible,
   .theme-switcher {
     right: 12px;
     bottom: 12px;
-  }
-
-  .command-window {
-    padding: 22px;
-  }
-
-  .command-heading h2 {
-    font-size: 28px;
-  }
-
-  .command-list button {
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 5px;
   }
 
   .case-window {
