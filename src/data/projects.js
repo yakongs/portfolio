@@ -25,7 +25,7 @@ const projects = [
         "Produced a clear promotional experience that balances character artwork with product information across screen sizes.",
     },
     liveUrl: "",
-    repositoryUrl: "",
+    repositoryUrl: "https://github.com/yakongs/company_website",
   },
   {
     id: "cooking-app",
