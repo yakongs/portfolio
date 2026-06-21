@@ -49,18 +49,11 @@ const skills = [
     position: { x: 9, y: 44 },
   },
   {
-    name: "Git",
-    category: "Workflow",
-    description:
-      "Version control, branching, commits, and collaborative delivery workflows.",
-    position: { x: 22, y: 20 },
-  },
-  {
     name: "Codex",
     category: "AI Tooling",
     description:
       "AI-assisted coding workflows for implementation, review, and iteration.",
-    position: { x: 50, y: 50 },
+    position: { x: 22, y: 20 },
   },
 ];
 
