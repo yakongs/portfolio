@@ -9,51 +9,39 @@ const skills = [
     name: "JavaScript",
     category: "Language",
     description: "Client and server logic, data handling, and browser interactions.",
-    position: { x: 78, y: 20 },
+    position: { x: 82, y: 24 },
   },
   {
     name: "Tailwind CSS",
     category: "Styling",
     description:
       "Utility-first styling for fast, consistent, responsive interface design.",
-    position: { x: 91, y: 44 },
-  },
-  {
-    name: "HTML",
-    category: "Frontend",
-    description: "Semantic, accessible document structure and content hierarchy.",
-    position: { x: 86, y: 69 },
-  },
-  {
-    name: "CSS",
-    category: "Frontend",
-    description: "Responsive layouts, animation, and expressive visual systems.",
-    position: { x: 64, y: 89 },
+    position: { x: 88, y: 58 },
   },
   {
     name: "Node.js",
     category: "Backend",
     description: "JavaScript services, tooling, and server-side application logic.",
-    position: { x: 36, y: 89 },
+    position: { x: 68, y: 86 },
   },
   {
     name: "Express",
     category: "Backend",
     description: "REST APIs, routing, middleware, and application architecture.",
-    position: { x: 14, y: 69 },
+    position: { x: 32, y: 86 },
   },
   {
     name: "MongoDB",
     category: "Database",
     description: "Document data modeling, queries, and persistent application data.",
-    position: { x: 9, y: 44 },
+    position: { x: 12, y: 58 },
   },
   {
     name: "Codex",
     category: "AI Tooling",
     description:
       "AI-assisted coding workflows for implementation, review, and iteration.",
-    position: { x: 22, y: 20 },
+    position: { x: 18, y: 24 },
   },
 ];
 
