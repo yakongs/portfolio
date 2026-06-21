@@ -14,10 +14,6 @@ const skillSource = fs.readFileSync(
   path.join(root, "src", "components", "SkillConstellation.jsx"),
   "utf8",
 );
-const caseWindowSource = fs.readFileSync(
-  path.join(root, "src", "components", "CaseStudyWindow.jsx"),
-  "utf8",
-);
 const analyticsSource = fs.readFileSync(
   path.join(root, "src", "utils", "analytics.js"),
   "utf8",
@@ -92,13 +88,6 @@ check(
     /aria-live="polite"/.test(skillSource) &&
     /aria-pressed=/.test(skillSource),
   "Expected labelled skill controls and an announced detail region.",
-);
-check(
-  "Case study dialog accessibility",
-  /aria-labelledby=\{`case-title-\$\{project\.id\}`\}/.test(caseWindowSource) &&
-    /ArrowUp/.test(caseWindowSource) &&
-    /previousActiveElement\?\.focus/.test(caseWindowSource),
-  "Expected labelled case-study dialogs, keyboard movement, and focus return.",
 );
 check(
   "Privacy-friendly interaction analytics",

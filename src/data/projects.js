@@ -15,15 +15,6 @@ const projects = [
     image: sosoFactoryImage,
     imageAlt: "Soso Factory game website landing page",
     imagePosition: "center",
-    caseStudy: {
-      role: "Frontend development and interface design",
-      challenge:
-        "Present a playful game identity without letting the illustrated artwork overwhelm navigation and calls to action.",
-      solution:
-        "Built a structured hero layout with strong visual hierarchy, focused actions, responsive navigation, and room for localization.",
-      outcome:
-        "Produced a clear promotional experience that balances character artwork with product information across screen sizes.",
-    },
     liveUrl: "",
     repositoryUrl: "https://github.com/yakongs/company_website",
   },
@@ -39,15 +30,6 @@ const projects = [
     image: cookingAppImage,
     imageAlt: "Korean cooking app screens showing recipes, timer, and feedback",
     imagePosition: "center",
-    caseStudy: {
-      role: "Mobile interface design and application flow",
-      challenge:
-        "Make multiple cooking tools easy to reach while keeping the interface readable during hands-on kitchen use.",
-      solution:
-        "Organized the experience around persistent navigation, visual recipe selection, step-by-step content, and a dedicated timer.",
-      outcome:
-        "Created a complete mobile flow from choosing a dish through cooking and sharing feedback.",
-    },
     liveUrl: "",
     repositoryUrl: "https://github.com/yakongs/cooking-class-app",
   },
@@ -63,15 +45,6 @@ const projects = [
     image: goKpopImage,
     imageAlt: "Go K-Pop artist and song discovery website",
     imagePosition: "top",
-    caseStudy: {
-      role: "Frontend development and content organization",
-      challenge:
-        "Display several artists and track details without making the page feel like a dense table of data.",
-      solution:
-        "Used artist tabs, reusable song cards, artwork, and concise metadata to create a more visual browsing experience.",
-      outcome:
-        "Delivered a straightforward discovery interface where visitors can compare releases and continue to external artist resources.",
-    },
     liveUrl: "",
     repositoryUrl: "https://github.com/yakongs/go-Kpop",
   },

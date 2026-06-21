@@ -2,7 +2,6 @@ import { useEffect, useMemo, useState } from "react";
 import "./App.css";
 import bgImage from "./assets/bg.webp";
 import profileImage from "./assets/profile.webp";
-import CaseStudyWindow from "./components/CaseStudyWindow.jsx";
 import ProjectCard from "./components/ProjectCard.jsx";
 import SkillConstellation from "./components/SkillConstellation.jsx";
 import projects from "./data/projects.js";
@@ -14,9 +13,11 @@ function App() {
   const resumeUrl = `${import.meta.env.BASE_URL}resume.pdf`;
   const [activeFilter, setActiveFilter] = useState("All");
   const [activeSection, setActiveSection] = useState("");
-  const [activeProject, setActiveProject] = useState(null);
   const [theme, setTheme] = useState("lavender");
-  const filters = ["All", ...new Set(projects.map((project) => project.category))];
+  const filters = [
+    "All",
+    ...new Set(projects.map((project) => project.category)),
+  ];
   const filteredProjects = useMemo(
     () =>
       activeFilter === "All"
@@ -72,7 +73,6 @@ function App() {
             </a>
           ))}
         </nav>
-
       </header>
 
       <main id="top">
@@ -139,9 +139,22 @@ function App() {
         <section id="about" className="section">
           <h2>ABOUT ME</h2>
           <p>
-            Hi, I’m Soso. I’m a developer preparing for a web development
-            career, with experience in React, Express, MongoDB, and full-stack
-            projects.
+            Hi, I’m Soso, a recent Computer Programming graduate and aspiring
+            full stack developer based in Toronto.
+          </p>
+
+          <p>
+            I enjoy building responsive web applications with React, Node.js,
+            Express, and databases such as MongoDB and PostgreSQL. Through
+            personal and academic projects, I have worked on frontend
+            interfaces, REST APIs, authentication flows, and database-driven
+            features.
+          </p>
+
+          <p>
+            I am currently seeking a junior developer opportunity where I can
+            keep learning, contribute to real products, and grow with a
+            collaborative team.
           </p>
         </section>
 
@@ -177,11 +190,7 @@ function App() {
 
           <div className="project-grid">
             {filteredProjects.map((project) => (
-              <ProjectCard
-                key={project.id}
-                project={project}
-                onOpenCaseStudy={setActiveProject}
-              />
+              <ProjectCard key={project.id} project={project} />
             ))}
           </div>
         </section>
@@ -189,7 +198,10 @@ function App() {
         <section id="contact" className="section contact">
           <p className="section-tag">START A CONVERSATION</p>
           <h2>CONTACT</h2>
-          <p>Let’s build something dreamy together.</p>
+          <p>
+            I’m a junior full stack developer looking for opportunities to
+            learn, contribute, and grow with a team
+          </p>
 
           <div className="contact-actions">
             {site.email ? (
@@ -243,11 +255,6 @@ function App() {
           />
         ))}
       </aside>
-
-      <CaseStudyWindow
-        project={activeProject}
-        onClose={() => setActiveProject(null)}
-      />
     </div>
   );
 }

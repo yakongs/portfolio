@@ -22,7 +22,6 @@ Update this section whenever a task is completed. Mark finished tasks with
 - [x] Create a reusable `ProjectCard` component.
 - [ ] Add a live-demo link to each available project.
 - [x] Add a GitHub repository link to each available project.
-- [x] Add expandable project details or case-study views.
 - [x] Rewrite project descriptions to explain the problem, personal role,
       technical decisions, and result.
 - [x] Add a working email link to the contact section.
@@ -54,7 +53,6 @@ These are optional and do not count toward the initial completion percentage.
 
 - [x] Add an animated active-section indicator to the navbar.
 - [x] Add lavender, pink chrome, and aqua themes.
-- [x] Present project case studies as draggable Y2K desktop windows.
 - [x] Add an interactive technology orbit or skill constellation.
 - [x] Add subtle cursor glow and depth effects.
 - [x] Make the availability badge configurable from one data file.
@@ -69,7 +67,7 @@ These are optional and do not count toward the initial completion percentage.
 4. Accessibility and semantic HTML
 5. Image performance
 6. SEO and social metadata
-7. Project filters and case studies
+7. Project filters
 8. One signature interactive feature
 
 ## Build Log
@@ -78,14 +76,15 @@ These are optional and do not count toward the initial completion percentage.
 | --- | ---: | --- |
 | 2026-06-10 | 0% | Created the implementation roadmap. |
 | 2026-06-10 | 20% | Added real project screenshots, reusable project data, a `ProjectCard` component, and lazy-loaded project images. |
-| 2026-06-10 | 75% | Added filters, expandable case studies, richer project copy, resume access, semantic controls, accessibility improvements, WebP optimization, documentation, social metadata, and a three-color theme switcher. |
+| 2026-06-10 | 75% | Added filters, richer project copy, resume access, semantic controls, accessibility improvements, WebP optimization, documentation, social metadata, and a three-color theme switcher. |
 | 2026-06-10 | 75% + 4 extras | Added active navigation, a keyboard-accessible `Ctrl+K` command palette, completed theme variants, and configurable profile availability. |
 | 2026-06-10 | 75% + 6 extras | Added pointer-aware project depth effects, ambient glow, and an automated accessibility/performance release audit. |
 | 2026-06-10 | 75% + 7 extras | Replaced the static skill list with a responsive, keyboard-accessible technology constellation and live detail panel. |
-| 2026-06-10 | 75% + 9 extras | Completed the optional backlog with draggable case-study windows and privacy-friendly local interaction analytics. |
+| 2026-06-10 | 75% + 9 extras | Completed the optional backlog with draggable project detail windows and privacy-friendly local interaction analytics. |
 | 2026-06-10 | 95% + 9 extras | Added verified contact/social profiles, available project repositories, full deployment metadata, and GitHub Pages automation. |
 | 2026-06-10 | Live | Published the portfolio through GitHub Pages and verified the site and resume return HTTP 200. |
 | 2026-06-11 | 95% + 8 extras | Removed the `Ctrl+K` command palette and its navigation trigger. |
+| 2026-06-20 | 95% + 7 extras | Removed the project detail window feature and all related UI/code. |
 
 ## Blocked Configuration
 

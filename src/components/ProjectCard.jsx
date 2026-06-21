@@ -1,6 +1,6 @@
 import { trackInteraction } from "../utils/analytics.js";
 
-function ProjectCard({ project, onOpenCaseStudy }) {
+function ProjectCard({ project }) {
   const handlePointerMove = (event) => {
     if (
       event.pointerType !== "mouse" ||
@@ -56,17 +56,6 @@ function ProjectCard({ project, onOpenCaseStudy }) {
             <span key={skill}>{skill}</span>
           ))}
         </div>
-
-        <button
-          className="case-study-button"
-          type="button"
-          onClick={() => {
-            trackInteraction(`case-study:${project.id}`);
-            onOpenCaseStudy(project);
-          }}
-        >
-          VIEW CASE STUDY
-        </button>
 
         {(project.liveUrl || project.repositoryUrl) && (
           <div className="project-links">

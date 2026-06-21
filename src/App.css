@@ -989,28 +989,6 @@ nav a.is-active::after {
   box-shadow: inset 0 0 12px rgba(255, 255, 255, 0.8);
 }
 
-.case-study-button {
-  width: 100%;
-  margin-top: 24px;
-  padding: 18px 0 0;
-  border-top: 1px solid rgba(118, 88, 184, 0.2);
-  border-right: 0;
-  border-bottom: 0;
-  border-left: 0;
-  background: transparent;
-  color: var(--accent-dark);
-  text-align: left;
-  font-family: "Orbitron", sans-serif;
-  font-size: 11px;
-  font-weight: 900;
-  letter-spacing: 1px;
-  cursor: pointer;
-}
-
-.case-study-button:hover {
-  color: var(--accent);
-}
-
 .project-links {
   display: flex;
   gap: 12px;
@@ -1110,156 +1088,8 @@ nav a.is-active::after {
   background: #62cce7;
 }
 
-.case-window-dialog {
-  width: min(920px, calc(100% - 36px));
-  max-height: calc(100vh - 36px);
-  padding: 0;
-  overflow: visible;
-  border: 0;
-  background: transparent;
-}
-
-.case-window-dialog::backdrop {
-  background: rgba(57, 39, 96, 0.34);
-  backdrop-filter: blur(9px);
-}
-
-.case-window {
-  overflow: hidden;
-  border: 2px solid rgba(255, 255, 255, 0.96);
-  border-radius: 28px;
-  background: rgba(246, 241, 255, 0.96);
-  box-shadow:
-    inset 0 0 32px rgba(255, 255, 255, 0.9),
-    0 34px 100px rgba(62, 39, 116, 0.38);
-  transform: translate(var(--window-x), var(--window-y));
-}
-
-.case-window-bar {
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
-  align-items: center;
-  gap: 18px;
-  min-height: 58px;
-  padding: 12px 18px;
-  border-bottom: 1px solid rgba(106, 79, 167, 0.18);
-  background: linear-gradient(90deg, #fbe9ff, #e2dcff, #d8f5ff);
-  cursor: grab;
-  user-select: none;
-  touch-action: none;
-}
-
-.case-window-bar:active {
-  cursor: grabbing;
-}
-
-.case-window-bar p {
-  margin: 0;
-  color: #7057a8;
-  font-size: 10px;
-  font-weight: 900;
-  letter-spacing: 2px;
-  text-align: center;
-}
-
-.window-dots {
-  display: flex;
-  gap: 7px;
-}
-
-.window-dots span {
-  width: 12px;
-  height: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.94);
-  border-radius: 50%;
-  box-shadow: 0 2px 8px rgba(75, 49, 126, 0.18);
-}
-
-.window-dots span:nth-child(1) {
-  background: #ff9cc7;
-}
-
-.window-dots span:nth-child(2) {
-  background: #ffe29d;
-}
-
-.window-dots span:nth-child(3) {
-  background: #8ee5d0;
-}
-
-.case-window-close {
-  justify-self: end;
-  padding: 8px 11px;
-  border: 1px solid white;
-  border-radius: 9px;
-  background: rgba(255, 255, 255, 0.6);
-  color: var(--accent-dark);
-  font: 900 9px/1 "Orbitron", sans-serif;
-  cursor: pointer;
-}
-
-.case-window-body {
-  display: grid;
-  grid-template-columns: minmax(0, 1.05fr) minmax(320px, 0.95fr);
-  max-height: calc(100vh - 130px);
-  overflow: auto;
-}
-
-.case-window-body > img {
-  width: 100%;
-  height: 100%;
-  min-height: 520px;
-  object-fit: cover;
-}
-
-.case-window-copy {
-  padding: 42px 38px;
-}
-
-.case-window-copy h2 {
-  margin: 8px 0 16px;
-  color: var(--accent);
-  font-size: 38px;
-  font-style: italic;
-}
-
-.case-window-copy > p:not(.project-type) {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.7;
-  color: #6f6493;
-}
-
-.case-window-copy dl {
-  margin: 28px 0 0;
-}
-
-.case-window-copy dl div {
-  padding: 16px 0;
-  border-top: 1px solid rgba(111, 82, 176, 0.18);
-}
-
-.case-window-copy dt {
-  margin-bottom: 7px;
-  color: var(--accent);
-  font-size: 10px;
-  font-weight: 900;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-}
-
-.case-window-copy dd {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  font-size: 14px;
-  line-height: 1.65;
-  color: #6f6493;
-}
-
 a:focus-visible,
-button:focus-visible,
-.case-window-bar:focus-visible {
+button:focus-visible {
   outline: 3px solid #3d2b73;
   outline-offset: 4px;
   border-radius: 8px;
@@ -1378,35 +1208,6 @@ button:focus-visible,
     bottom: 12px;
   }
 
-  .case-window {
-    transform: none;
-  }
-
-  .case-window-bar {
-    grid-template-columns: 1fr auto;
-    cursor: default;
-  }
-
-  .case-window-bar p {
-    display: none;
-  }
-
-  .case-window-body {
-    grid-template-columns: 1fr;
-  }
-
-  .case-window-body > img {
-    height: 260px;
-    min-height: 0;
-  }
-
-  .case-window-copy {
-    padding: 30px 24px;
-  }
-
-  .case-window-copy h2 {
-    font-size: 31px;
-  }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -1443,14 +1244,6 @@ button:focus-visible,
     transform: none;
   }
 
-  .case-window {
-    transform: none;
-  }
-
-  .case-window-bar {
-    cursor: default;
-    touch-action: auto;
-  }
 }
 
 @media (max-width: 480px) {

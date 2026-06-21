@@ -1,11 +1,9 @@
 # Soso Portfolio
 
 A single-page React portfolio with a Y2K-inspired glass interface, responsive
-project cards, expandable case studies, project filtering, and selectable color
-themes. It also includes active-section navigation and a keyboard-accessible
-skills section with an interactive technology constellation and
-keyboard-selectable nodes. Project case studies open as draggable desktop-style
-windows.
+project cards, project filtering, and selectable color themes. It also includes
+active-section navigation and a keyboard-accessible skills section with an
+interactive technology constellation and keyboard-selectable nodes.
 
 ## Stack
 
@@ -43,7 +41,6 @@ npm run optimize:images
 
 ```text
 src/
-  components/CaseStudyWindow.jsx
   components/SkillConstellation.jsx
   components/ProjectCard.jsx
   data/projects.js
@@ -65,7 +62,6 @@ Project content lives in `src/data/projects.js`. Each project supports:
 - Category filtering
 - Technology tags
 - Screenshot and alternative text
-- Role, challenge, solution, and outcome details
 - Optional live-demo and repository URLs
 
 ## Personal Configuration
@@ -115,10 +111,9 @@ Repository setup:
 
 ## Local Analytics
 
-Resume, case-study, live-demo, and repository interactions are counted in the
-visitor's own browser under the `localStorage` key
-`soso-portfolio-analytics-v1`. No analytics data is transmitted over the
-network and no personal information is collected.
+Resume, live-demo, and repository interactions are counted in the visitor's own
+browser under the `localStorage` key `soso-portfolio-analytics-v1`. No analytics
+data is transmitted over the network and no personal information is collected.
 
 Inspect the counters in a browser console:
 
